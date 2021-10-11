@@ -21,7 +21,7 @@ module.exports = {
           options: {
             presets: ["@babel/preset-env"],
             plugins: ["@babel/plugin-proposal-optional-chaining"],
-            exclude: /node_modules/,
+            // exclude: /node_modules/,
           }, // if we were using React.js, we would include "react"
         },
       },
@@ -38,6 +38,8 @@ module.exports = {
           },
           "css-loader",
           "postcss-loader",
+          "sass-loader",
+          "style-loader",
         ],
       },
       {

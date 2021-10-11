@@ -8,6 +8,10 @@
     "> 1%",
     "not dead"
   ],
+  "engines": {
+    "node": "12.5.0",
+    "npm": "6.9.0"
+  },
   "scripts": {
     "serve": "NODE_ENV=development webpack serve --config webpack.dev.js ",
     "watch": "NODE_ENV=development webpack --watch --config webpack.dev.js ",
@@ -32,6 +36,7 @@
     "extract-loader": "^5.1.0",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^1.6.2",
+    "node-sass": "^6.0.1",
     "postcss": "^8.3.0",
     "postcss-loader": "^5.3.0",
     "sass": "^1.42.1",
