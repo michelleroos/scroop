@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 100%;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+
+  head {
+
+    #favicon {
+      border-radius: 50%;
+    }
+  }
+
+  body {
+
+    a {
+      text-decoration: none;
+      color: #222222;
+      cursor: pointer;
+    }
+
+    ul, li {
+      list-style: none;
+    }
+
+    #outer-container {
+
+      #inner-container {
+        
+        .header-links, .footer-links {
+          justify-self: center;
+          align-self: center;
+          text-transform: capitalize;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+          #input-container, #exclude-container, #main-input-container {
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.080);
+            height: 30px;
+            margin-top: 5px;
+            text-decoration: none;
+
+            i {
+              margin-left: 10px;
+              color: rgba(0, 0, 0, 0.080);
+            }
+
+            .fa-times {
+              margin-right: 10px;
+              cursor: pointer;
+            }
+            
+            #search-input, #exclude-input, #main-search-input, #search-input-2 {
+              width: 100%;
+              align-self: center;
+              margin-left: 5px;
+              border: none;
+              border-radius: 30px;
+
+              &::placeholder {
+                color: lightgray;
+                font-style: italic;
+              }
+              
+              &:focus {
+                border: none;
+                outline: none;
+                border-radius: 30px;
+              }
+            }
+
+            &:hover {
+              box-shadow: 1px 1px 2px rgb(200, 200, 200);
+            }
+          }
+
+          .btns {
+            text-transform: capitalize;
+            border: none;
+            font-size: 15px;
+            color: #5F6368;
+            padding: 7px 15px 7px 15px;
+            border-radius: 3px;
+            border: 1px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+            font-family: 'Roboto', arial, sans-serif;
+
+            &:hover {
+              border: 1px solid rgba(0, 0, 0, 0.230);
+              box-shadow: 1px 1px 2px rgb(200, 200, 200);
+            }
+          }
+
+        #header, #header-tools {
+          display: grid;
+          grid-template-columns: 200px 110px 1fr 65px 70px 35px 60px;
+          grid-template-rows: 50px 32px 10px;
+          grid-template-areas: 
+          ". logo input-filter-container github linkedin resume portfolio"
+          ". . filter-container . . . .";
+          /* border-bottom: 1px solid whitesmoke; */
+
+          #logo {
+            grid-area: logo;
+            font-family: 'Urbanist', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            color: black;
+            text-decoration: none;
+            justify-self: start;
+          }
+
+          #input-filter-container{
+            grid-area: input-filter-container;
+            display: grid;
+            grid-template-columns: 422px 1fr;
+            grid-template-areas: "input-container tools";
+            
+            #input-container {
+              justify-self: start;
+              margin-top: 0;
+              justify-self: start;
+              align-self: center;
+              width: 420px;
+              grid-area: input-container;
+              box-shadow: 1px 1px 2px rgb(200, 200, 200);
+  
+              #search-input {
+                grid-area: search-input;
+              }
+            }
+
+            #tools {
+              grid-area: tools;
+              font-size: 12px;
+              color: lightgray;
+              border: none;
+              width: 60px;
+              height: 30px;
+              background-color: white;
+              text-transform: capitalize;
+              margin-left: 15px;
+              align-self: center;
+              justify-self: start;
+              font-family: 'Roboto', arial, sans-serif;
+              font-size: 15px;
+              
+              &:hover {
+                background-color: rgb(249, 249, 249);
+                border: 1px solid lightgray;
+                box-shadow: 1px 1px 2px rgb(200, 200, 200);
+                border-radius: 3px;
+                cursor: pointer;
+                color: #5F6368;
+              }
+            }
+          }
+
+          #github {
+            grid-area: github;
+          }
+
+          #linkedin {
+            grid-area: linkedin;
+          }
+
+          #resume {
+            grid-area: resume;
+          }
+
+          #portfolio {
+            grid-area: portfolio;
+
+            #resume-container {
+
+              img {
+                height: 30px;
+                width: 30px;
+                object-fit: cover;
+                border-radius: 50%;
+              }              
+            }
+          }
+
+          .filter-container {
+            /*display: grid;
+            grid-template-columns: 302px 100px 100px 1fr;
+            grid-template-areas: "exclude-container meal-type diets filter";*/
+            display: flex;
+            align-content: flex-start;
+            justify-content: flex-start;
+            grid-area: filter-container;
+
+            #exclude-container {
+              grid-area: exclude-container;
+              width: 300px;
+              /*align-self: start;
+              justify-self: start;*/
+              margin-top: 0;
+  
+              #exclude-input {
+                grid-area: exclude-input;
+              }
+            }
+
+            #meal-type, #diets {
+              grid-area: meal-type;
+              border-radius: 30px;
+              border: 1px solid rgba(0, 0, 0, 0.080);
+              padding: 0;
+              margin-left: 10px;
+              height: 32px;
+              width: 95px;
+              /*justify-self: start;
+              align-self: start;*/
+              text-transform: capitalize;
+              text-align: center;
+              text-align-last: center;
+              appearance: none;
+              color: lightgray;
+              cursor: pointer;
+
+              &:hover {
+                box-shadow: 1px 1px 2px rgb(200, 200, 200);
+              }
+            }
+
+          #filter {
+            grid-area: filter;
+            font-size: 12px;
+            width: 80px;
+            height: auto;
+            max-height: 33px;
+            margin-left: 10px;
+          }
+
+            #diets {
+              grid-area: diets;
+              margin-left: 10px;
+            }
+
+            /* #checkboxes {
+              grid-area: checkboxes;
+              font-size: 10px;
+              justify-self: center;
+              align-self: center;
+              margin: 3px 0 0 5px;
+              text-transform: capitalize;
+
+              .checkbox-container {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                display: inline;
+                margin-left: 5px;
+
+                label, input {
+                  color: lightgray;
+                }
+
+                input {
+                  margin: 0;
+                  height: 10px;
+                  width: 10px;
+                  cursor: pointer;
+                }
+
+                label {
+                  height: 10px;
+                  vertical-align: top;
+                  position: relative;
+                  top: -1px;
+                  margin-left: 1px;
+                }
+              }
+            } */
+          }
+        }
+
+        #header-tools {
+          display: none;
+        }
+
+        #search-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 100px 70px 70px;
+          grid-template-areas: 
+          ". logo ."
+          ". main-input-container ."
+          ". search-btn-container .";
+
+          #logo {
+            text-transform: capitalize;
+            font-family: 'Urbanist', sans-serif;
+            font-size: 80px;
+            font-weight: bold;
+            grid-area: logo;
+            justify-self: center;
+            align-self: start;
+          }
+
+          #main-input-container {
+            grid-area: main-input-container;
+
+            #main-search-input {
+              grid-area: main-search-input;
+            }
+          }
+
+          #search-btn-container {
+            grid-area: search-btn-container;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+
+            #scroople-search-btn {
+              margin-right: 5px;
+              width: auto;
+              height: auto;
+              max-height: 33px;
+            }
+            
+            #feeling-lucky-btn {
+              margin-left: 5px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: clip;
+              width: auto;
+              height: auto;
+              max-height: 33px;
+
+              ul {
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 130px;
+                margin-top: -116px;
+                
+                li {
+                  padding: 0 0 5px 0;
+                }
+              }
+            }
+          }
+        }
+
+        #search-result-container {
+          /*display: flex;
+          justify-content: center;
+          align-items: center;*/
+          display: grid;
+          grid-template-columns: 200px 1fr 170px;
+          grid-template-areas: ". search-results .";
+            
+          #search-results {
+            grid-area: search-results;
+            width: 760px;
+
+            .result {
+              width: 100%;
+              display: grid;
+              grid-template-rows: 20px 40px 20px 20px;
+              margin-top: 30px;
+              grid-template-areas: 
+              "url"
+              "title"
+              "summary"
+              "result-links";
+  
+              .url {
+                grid-area: url;
+                color: #202124;
+                font-size: 14px;
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+  
+              .title {
+                grid-area: title;
+                color: #1a0dab;
+                font-size: 20px;
+                margin: 0;
+                padding-top: 5px;
+                align-self: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+  
+              .summary {
+                grid-area: summary;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0;
+                color: #4d5156;
+                line-height: 1.5;
+              }
+  
+              .result-links {
+                grid-area: result-links;
+                display: flex;
+                
+                p {
+                  margin: 15px 0 0 0;
+                  color: #4d5156;
+  
+                  &:first-child {
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        footer {
+          display: grid;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          grid-template-columns: 160px 105px 110px 1fr 120px;
+          grid-template-rows: 50px;
+          grid-template-areas: "how-scroople-works composting food-storage . ipcc-report";
+          background-color: #f2f2f2;
+
+          #how-scroople-works {
+            grid-area: how-scroople-works;
+          }
+
+          #composting {
+            grid-area: composting;
+          }
+
+          #food-storage {
+            grid-area: food-storage;
+          }
+
+          #ipcc-report {
+            grid-area: ipcc-report;
+
+            i {
+              color: yellowgreen;
+            }
+          }
+        }
+
+        .modal-background {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          top: 0;
+          left: 0;
+          background-color: rgba(131, 131, 131, 0.081);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          visibility: hidden;
+          opacity: 0;
+
+          #modal {
+            background-color: white;
+            height: 70%;
+            width: 50%;
+            border-radius: 7px;
+            box-shadow: 1px 1px 7px rgb(200, 200, 200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            overflow: auto;
+
+            .fa-times {
+              position: absolute;
+              top: 25px;
+              right: 25px;
+              cursor: pointer;
+            }
+
+            #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90%;
+            width: 90%;
+
+              ol {
+                padding: 0 50px 0 50px;              
+  
+                li {
+                  list-style: unset;
+                }
+              }
+            }
+          }
+        }
+
+        .modal-active {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .visibility {
+    visibility: hidden;
+  }
+
+  .filter-visibility {
+    visibility: hidden;
+  }
+}
