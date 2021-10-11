@@ -11,11 +11,14 @@
   "scripts": {
     "serve": "NODE_ENV=development webpack serve --config webpack.dev.js ",
     "watch": "NODE_ENV=development webpack --watch --config webpack.dev.js ",
-    "build": "NODE_ENV=production webpack --config webpack.prod.js"
+    "build": "NODE_ENV=production webpack --config webpack.prod.js",
+    "start": "node app.js"
   },
   "author": "mrcjbradley",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-optional-chaining": "^7.14.5",

@@ -1,2 +1,68 @@
-!function(){"use strict";function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var t=function(){function t(e){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t),this.coords=[10,10,150,100],this.animationDir=1,this.fillColor="green",this.canvas=document.createElement("canvas"),this.canvas.width=.75*window.innerWidth,this.canvas.height=this.canvas.width/2,this.ctx=this.canvas.getContext("2d")}var n,r;return n=t,(r=[{key:"createCanvas",value:function(){document.body.append(this.canvas)}},{key:"clearCanvas",value:function(){this.ctx.clearRect(0,0,this.canvas.width,this.canvas.height)}},{key:"setColor",value:function(e){this.fillColor=e,document.body.style.backgroundColor=e,document.body.style.filter="brightness(150%)"}}])&&e(n.prototype,r),t}();function n(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var a=function(){function e(t,n){var o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"green";r(this,e),this.ctx=t,this.coords=n,this.color=o,this.animationDir=1}var t,a;return t=e,(a=[{key:"drawSquare",value:function(){var e,t;this.ctx.fillStyle=this.color,(e=this.ctx).fillRect.apply(e,function(e){if(Array.isArray(e))return n(e)}(t=this.coords)||function(e){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(e))return Array.from(e)}(t)||function(e,t){if(e){if("string"==typeof e)return n(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);return"Object"===r&&e.constructor&&(r=e.constructor.name),"Map"===r||"Set"===r?Array.from(e):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?n(e,t):void 0}}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}())}},{key:"updateSquare",value:function(e){var t=this;this.color=e,this.coords=this.coords.map((function(e){return e+1*t.animationDir}))}},{key:"reverseAnimation",value:function(){this.animationDir*=-1}}])&&o(t.prototype,a),e}();function i(e,t){if(e){if("string"==typeof e)return c(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?c(e,t):void 0}}function c(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var u={currentExample:null,currentEventListeners:[]};function l(){for(;u.currentEventListeners.length;){var e=(o=u.currentEventListeners.pop(),a=3,function(e){if(Array.isArray(e))return e}(o)||function(e,t){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(e)){var n=[],r=!0,o=!1,a=void 0;try{for(var i,c=e[Symbol.iterator]();!(r=(i=c.next()).done)&&(n.push(i.value),!t||n.length!==t);r=!0);}catch(e){o=!0,a=e}finally{try{r||null==c.return||c.return()}finally{if(o)throw a}}return n}}(o,a)||i(o,a)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()),t=e[0],n=e[1],r=e[2];"window"===t?(window.removeEventListener(n,r),console.log(r)):document.querySelector(t).removeEventListener(n,r)}var o,a}function s(){var e;"CANVASDEMO"===u.currentExample&&document.body.removeChild(document.querySelector("canvas")),"DOMDEMO"===u.currentExample&&(e=document.querySelectorAll(".card"),function(e){if(Array.isArray(e))return c(e)}(e)||function(e){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(e))return Array.from(e)}(e)||i(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()).forEach((function(e){return document.body.removeChild(e)}))}document.querySelector("#canvas-demo").addEventListener("click",(function(){s(),l(),u.currentExample="CANVASDEMO";var e=new t;e.createCanvas();var n=[new a(e.ctx,e.coords,e.fillColor)];function r(t){32===t.which&&(t.preventDefault(),n.forEach((function(e){return e.reverseAnimation()})),e.setColor("#".concat(Math.floor(16777215*Math.random()).toString(16))))}function o(t){t.preventDefault(),n.push(new a(e.ctx,e.coords.map((function(e){return e+25})),e.fillColor))}window.requestAnimationFrame((function t(){e.clearCanvas(),n.forEach((function(t){return t.updateSquare(e.fillColor)})),n.forEach((function(e){return e.drawSquare()})),window.requestAnimationFrame(t),n.forEach((function(e){e.coords[0]+e.coords[2]>window.innerWidth&&e.reverseAnimation(),e.coords[0]<0&&e.reverseAnimation()}))})),window.addEventListener("keydown",r),u.currentEventListeners.push(["window","keydown",r]),window.addEventListener("mousedown",o),u.currentEventListeners.push(["window","mousedown",o])})),document.querySelector("#DOM-demo").addEventListener("click",(function(){l(),s(),u.currentExample="DOMDEMO",function(){var e,t={key1:"hi",key2:{key3:"Hello"}},n=(null==t||null===(e=t.key2)||void 0===e?void 0:e.key3)||t.key1;document.body.classList.add("center");var r=document.createElement("div");r.classList.add("card","center","rando");var o=document.createElement("p"),a=document.createElement("btn");a.innerText="Pick Me!",r.append(a,o),document.body.append(r),a.onclick=function(e){var t;e.preventDefault(),o.innerHTML=(t=["Arthur Dent","Ford Prefect","Zaphod Beeblebrox","Marvin the Paranoid Android","Trillian","Slartibartfast"])[Math.floor(Math.random()*t.length)]};var i=document.createElement("div");i.classList.add("card","center"),i.innerHTML="<h2>".concat(n," World!!!</h2>"),document.body.append(i);var c=document.createElement("div");c.classList.add("card","center","image-card"),document.body.appendChild(c);var u=document.createElement("img");u.src=document.querySelector(".js-stitch-yoda-src").src,u.classList.add("card","center"),u.style.objectFit="cover",u.style.filter="grayscale(80%)",document.body.appendChild(u)}()}))}();
-//# sourceMappingURL=main.js.map
+/******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/styles/index.scss":
+/*!*******************************!*\
+  !*** ./src/styles/index.scss ***!
+  \*******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+!function() {
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.scss */ "./src/styles/index.scss");
+ // import Square from "./scripts/square";
+}();
+/******/ })()
+;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOzs7Ozs7O1VDQUE7VUFDQTs7VUFFQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFDQTs7VUFFQTtVQUNBOztVQUVBO1VBQ0E7VUFDQTs7Ozs7V0N0QkE7V0FDQTtXQUNBO1dBQ0EsdURBQXVELGlCQUFpQjtXQUN4RTtXQUNBLGdEQUFnRCxhQUFhO1dBQzdEOzs7Ozs7Ozs7Ozs7Q0NMQSx5QyIsInNvdXJjZXMiOlsid2VicGFjazovL3Njcm9vcGxlLy4vc3JjL3N0eWxlcy9pbmRleC5zY3NzIiwid2VicGFjazovL3Njcm9vcGxlL3dlYnBhY2svYm9vdHN0cmFwIiwid2VicGFjazovL3Njcm9vcGxlL3dlYnBhY2svcnVudGltZS9tYWtlIG5hbWVzcGFjZSBvYmplY3QiLCJ3ZWJwYWNrOi8vc2Nyb29wbGUvLi9zcmMvaW5kZXguanMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307IiwiLy8gVGhlIG1vZHVsZSBjYWNoZVxudmFyIF9fd2VicGFja19tb2R1bGVfY2FjaGVfXyA9IHt9O1xuXG4vLyBUaGUgcmVxdWlyZSBmdW5jdGlvblxuZnVuY3Rpb24gX193ZWJwYWNrX3JlcXVpcmVfXyhtb2R1bGVJZCkge1xuXHQvLyBDaGVjayBpZiBtb2R1bGUgaXMgaW4gY2FjaGVcblx0dmFyIGNhY2hlZE1vZHVsZSA9IF9fd2VicGFja19tb2R1bGVfY2FjaGVfX1ttb2R1bGVJZF07XG5cdGlmIChjYWNoZWRNb2R1bGUgIT09IHVuZGVmaW5lZCkge1xuXHRcdHJldHVybiBjYWNoZWRNb2R1bGUuZXhwb3J0cztcblx0fVxuXHQvLyBDcmVhdGUgYSBuZXcgbW9kdWxlIChhbmQgcHV0IGl0IGludG8gdGhlIGNhY2hlKVxuXHR2YXIgbW9kdWxlID0gX193ZWJwYWNrX21vZHVsZV9jYWNoZV9fW21vZHVsZUlkXSA9IHtcblx0XHQvLyBubyBtb2R1bGUuaWQgbmVlZGVkXG5cdFx0Ly8gbm8gbW9kdWxlLmxvYWRlZCBuZWVkZWRcblx0XHRleHBvcnRzOiB7fVxuXHR9O1xuXG5cdC8vIEV4ZWN1dGUgdGhlIG1vZHVsZSBmdW5jdGlvblxuXHRfX3dlYnBhY2tfbW9kdWxlc19fW21vZHVsZUlkXShtb2R1bGUsIG1vZHVsZS5leHBvcnRzLCBfX3dlYnBhY2tfcmVxdWlyZV9fKTtcblxuXHQvLyBSZXR1cm4gdGhlIGV4cG9ydHMgb2YgdGhlIG1vZHVsZVxuXHRyZXR1cm4gbW9kdWxlLmV4cG9ydHM7XG59XG5cbiIsIi8vIGRlZmluZSBfX2VzTW9kdWxlIG9uIGV4cG9ydHNcbl9fd2VicGFja19yZXF1aXJlX18uciA9IGZ1bmN0aW9uKGV4cG9ydHMpIHtcblx0aWYodHlwZW9mIFN5bWJvbCAhPT0gJ3VuZGVmaW5lZCcgJiYgU3ltYm9sLnRvU3RyaW5nVGFnKSB7XG5cdFx0T2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIFN5bWJvbC50b1N0cmluZ1RhZywgeyB2YWx1ZTogJ01vZHVsZScgfSk7XG5cdH1cblx0T2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsICdfX2VzTW9kdWxlJywgeyB2YWx1ZTogdHJ1ZSB9KTtcbn07IiwiaW1wb3J0IFwiLi9zdHlsZXMvaW5kZXguc2Nzc1wiO1xuLy8gaW1wb3J0IFNxdWFyZSBmcm9tIFwiLi9zY3JpcHRzL3NxdWFyZVwiO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9
