@@ -1,6 +1,8 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const outputDir = "./dist";
+const webpack = require('webpack');
+const dotenv = require('dotenv');
 
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.js"), 
@@ -87,6 +89,9 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css",
       ignoreOrder: false, // Enable to remove warnings about conflicting order
+    }),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env)
     }),
     require("autoprefixer"),
   ],
