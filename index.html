@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>scroople</title>
   </head>
 
   <body>
     <div id="outer-container">
       <div id="inner-container">
-    
-        <div id="loader-container">
-          <div id="loader"></div>
-        </div>
     
         <header id="header">
           <a href="https://michelleroos.github.io/scroople/" id="logo" class="header-links visibility">scroople</a>
@@ -39,49 +35,6 @@
             </div>
           </a>
     
-          <div class="filter-container visibility">
-    
-            <div id="exclude-container">
-              <i class="fas fa-ban"></i>
-              <input id="exclude-input" type="text" placeholder="Exclude these ingredients">
-            </div>
-    
-            <select name="meal-type" id="meal-type" class="meal-type">
-              <option> meal type </option>
-              <option value="main course">main course</option>
-              <option value="soup">soup</option>
-              <option value="side dish">side dish</option>
-              <option value="dessert">dessert</option>
-              <option value="appetizer">appetizer</option>
-              <option value="breakfast">breakfast</option>
-              <option value="salad">salad</option>
-              <option value="bread">bread</option>
-              <option value="beverage">beverage</option>
-              <option value="sauce">sauce</option>
-              <option value="marinade">marinade</option>
-              <option value="fingerfood">fingerfood</option>
-              <option value="snack">snack</option>
-              <option value="drink">drink</option>
-            </select>
-    
-            <select name="diets" id="diets" class="diets">
-              <option> diet </option>
-              <option value="vegan">vegan</option>
-              <option value="vegetarian">vegetarian</option>
-              <option value="lacto-vegetarian">lacto-vegetarian</option>
-              <option value="ovo-vegetarian">ovo-vegetarian</option>
-              <option value="ketogenic">ketogenic</option>
-              <option value="pescetarian">pescetarian</option>
-              <option value="paleo">paleo</option>
-              <option value="primal">primal</option>
-              <option value="whole%2030">whole 30</option>
-              <option value="gluten%20free">gluten-free</option>
-            </select>
-    
-            <button id="filter" class="btns"><i class="fas fa-filter"></i> filter</button>
-    
-          </div>
-    
         </header>
     
         <div id="search-container">
@@ -89,24 +42,6 @@
           <div id="main-input-container">
             <i class="fas fa-search"></i>
             <input id="main-search-input" type="text">
-          </div>
-          <div id="search-btn-container">
-            <button id="scroople-search-btn" class="btns">scroople search</button>
-            <button id="feeling-lucky-btn" class="btns">
-              <ul id="feeling-lucky-list">
-                <li>i'm feeling vegan</li>
-                <li>i'm feeling keto</li>
-                <li>i'm feeling paleo</li>
-                <li>i'm feeling primal</li>
-                <li>i'm feeling whole-30</li>
-                <li>i'm feeling lucky</li>
-                <li>i'm feeling vegetarian</li>
-                <li>i'm feeling gluten-free</li>
-                <li>i'm feeling pescetarian</li>
-                <li>i'm feeling lacto-vegetarian</li>
-                <li>i'm feeling ovo-vegetarian</li>
-              </ul>
-            </button>
           </div>
         </div>
     
@@ -123,32 +58,7 @@
           <a href="https://www.ipcc.ch/report/ar6/wg1/" target="_blank" class="footer-links" id="ipcc-report"><i
               class="fab fa-envira"></i> IPCC report</a>
         </footer>
-    
-        <div class="modal-background">
-          <div id="modal">
-            <i id="modal-x" class="fas fa-times"></i>
-            <div id="content">
-              <!-- <p>scroople is a search tool to find recipes using ingredients your have at home. </p> -->
-              <p>did you know that up to 40% of the food supply in the US goes wasted every year and that food waste makes
-                up almost 20% of the overall waste stream? what's worse is that our landfills are so packed that food is
-                left to biodegrade virtually without any oxygen. this process produces a dangerous greenhouse gas called
-                methane. over a span of 20-30 years, methane is between 20-150 times more harmful to the environment than
-                carbondioxide.</p>
-              <p>scroople was created to help you search for recipes using ingredients. that way, you can search using
-                ingredients you already have at home or that you found at your local food market.</p>
-              <h1>here's how it works</h1>
-              <ol>
-                <li>enter the ingredients you would like to search with in the search bar on the home page (separate them
-                  using commas)</li>
-                <li>use the 'i'm feeling lucky' button if you want to view recipes from a randomly selected diet instead
-                </li>
-                <li>on the next page, click 'tools' to filter your results</li>
-                <li>that's it!</li>
-              </ol>
-              <p>scroople. don't waste food.</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
 
