@@ -1,3 +1,412 @@
-html{padding:0;margin:0;box-sizing:border-box;height:100%;min-height:100%;font-family:"Roboto",arial,sans-serif;font-size:14px}html head #favicon{border-radius:50%}html body a{text-decoration:none;color:#222;cursor:pointer}html body ul,html body li{list-style:none}html body #outer-container #inner-container .header-links,html body #outer-container #inner-container .footer-links{justify-self:center;align-self:center;text-transform:capitalize;cursor:pointer}html body #outer-container #inner-container .header-links:hover,html body #outer-container #inner-container .footer-links:hover{text-decoration:underline}html body #outer-container #inner-container #input-container,html body #outer-container #inner-container #exclude-container,html body #outer-container #inner-container #main-input-container{display:flex;align-items:center;border-radius:30px;border:1px solid rgba(0,0,0,.08);height:30px;margin-top:5px;text-decoration:none}html body #outer-container #inner-container #input-container i,html body #outer-container #inner-container #exclude-container i,html body #outer-container #inner-container #main-input-container i{margin-left:10px;color:rgba(0,0,0,.08)}html body #outer-container #inner-container #input-container .fa-times,html body #outer-container #inner-container #exclude-container .fa-times,html body #outer-container #inner-container #main-input-container .fa-times{margin-right:10px;cursor:pointer}html body #outer-container #inner-container #input-container #search-input,html body #outer-container #inner-container #input-container #exclude-input,html body #outer-container #inner-container #input-container #main-search-input,html body #outer-container #inner-container #input-container #search-input-2,html body #outer-container #inner-container #exclude-container #search-input,html body #outer-container #inner-container #exclude-container #exclude-input,html body #outer-container #inner-container #exclude-container #main-search-input,html body #outer-container #inner-container #exclude-container #search-input-2,html body #outer-container #inner-container #main-input-container #search-input,html body #outer-container #inner-container #main-input-container #exclude-input,html body #outer-container #inner-container #main-input-container #main-search-input,html body #outer-container #inner-container #main-input-container #search-input-2{width:100%;align-self:center;margin-left:5px;border:none;border-radius:30px}html body #outer-container #inner-container #input-container #search-input::-moz-placeholder,html body #outer-container #inner-container #input-container #exclude-input::-moz-placeholder,html body #outer-container #inner-container #input-container #main-search-input::-moz-placeholder,html body #outer-container #inner-container #input-container #search-input-2::-moz-placeholder,html body #outer-container #inner-container #exclude-container #search-input::-moz-placeholder,html body #outer-container #inner-container #exclude-container #exclude-input::-moz-placeholder,html body #outer-container #inner-container #exclude-container #main-search-input::-moz-placeholder,html body #outer-container #inner-container #exclude-container #search-input-2::-moz-placeholder,html body #outer-container #inner-container #main-input-container #search-input::-moz-placeholder,html body #outer-container #inner-container #main-input-container #exclude-input::-moz-placeholder,html body #outer-container #inner-container #main-input-container #main-search-input::-moz-placeholder,html body #outer-container #inner-container #main-input-container #search-input-2::-moz-placeholder{color:#d3d3d3;font-style:italic}html body #outer-container #inner-container #input-container #search-input:-ms-input-placeholder,html body #outer-container #inner-container #input-container #exclude-input:-ms-input-placeholder,html body #outer-container #inner-container #input-container #main-search-input:-ms-input-placeholder,html body #outer-container #inner-container #input-container #search-input-2:-ms-input-placeholder,html body #outer-container #inner-container #exclude-container #search-input:-ms-input-placeholder,html body #outer-container #inner-container #exclude-container #exclude-input:-ms-input-placeholder,html body #outer-container #inner-container #exclude-container #main-search-input:-ms-input-placeholder,html body #outer-container #inner-container #exclude-container #search-input-2:-ms-input-placeholder,html body #outer-container #inner-container #main-input-container #search-input:-ms-input-placeholder,html body #outer-container #inner-container #main-input-container #exclude-input:-ms-input-placeholder,html body #outer-container #inner-container #main-input-container #main-search-input:-ms-input-placeholder,html body #outer-container #inner-container #main-input-container #search-input-2:-ms-input-placeholder{color:#d3d3d3;font-style:italic}html body #outer-container #inner-container #input-container #search-input::placeholder,html body #outer-container #inner-container #input-container #exclude-input::placeholder,html body #outer-container #inner-container #input-container #main-search-input::placeholder,html body #outer-container #inner-container #input-container #search-input-2::placeholder,html body #outer-container #inner-container #exclude-container #search-input::placeholder,html body #outer-container #inner-container #exclude-container #exclude-input::placeholder,html body #outer-container #inner-container #exclude-container #main-search-input::placeholder,html body #outer-container #inner-container #exclude-container #search-input-2::placeholder,html body #outer-container #inner-container #main-input-container #search-input::placeholder,html body #outer-container #inner-container #main-input-container #exclude-input::placeholder,html body #outer-container #inner-container #main-input-container #main-search-input::placeholder,html body #outer-container #inner-container #main-input-container #search-input-2::placeholder{color:#d3d3d3;font-style:italic}html body #outer-container #inner-container #input-container #search-input:focus,html body #outer-container #inner-container #input-container #exclude-input:focus,html body #outer-container #inner-container #input-container #main-search-input:focus,html body #outer-container #inner-container #input-container #search-input-2:focus,html body #outer-container #inner-container #exclude-container #search-input:focus,html body #outer-container #inner-container #exclude-container #exclude-input:focus,html body #outer-container #inner-container #exclude-container #main-search-input:focus,html body #outer-container #inner-container #exclude-container #search-input-2:focus,html body #outer-container #inner-container #main-input-container #search-input:focus,html body #outer-container #inner-container #main-input-container #exclude-input:focus,html body #outer-container #inner-container #main-input-container #main-search-input:focus,html body #outer-container #inner-container #main-input-container #search-input-2:focus{border:none;outline:none;border-radius:30px}html body #outer-container #inner-container #input-container:hover,html body #outer-container #inner-container #exclude-container:hover,html body #outer-container #inner-container #main-input-container:hover{box-shadow:1px 1px 2px #c8c8c8}html body #outer-container #inner-container .btns{text-transform:capitalize;border:none;font-size:15px;color:#5f6368;padding:7px 15px 7px 15px;border-radius:3px;border:1px solid #fff;white-space:nowrap;overflow:hidden;cursor:pointer;font-family:"Roboto",arial,sans-serif}html body #outer-container #inner-container .btns:hover{border:1px solid rgba(0,0,0,.23);box-shadow:1px 1px 2px #c8c8c8}html body #outer-container #inner-container #header,html body #outer-container #inner-container #header-tools{display:grid;grid-template-columns:200px 110px 1fr 65px 70px 35px 60px;grid-template-rows:50px 32px 10px;grid-template-areas:". logo input-filter-container github linkedin resume portfolio" ". . filter-container . . . ."}html body #outer-container #inner-container #header #logo,html body #outer-container #inner-container #header-tools #logo{grid-area:logo;font-family:"Urbanist",sans-serif;font-weight:bold;font-size:24px;color:#000;text-decoration:none;justify-self:start}html body #outer-container #inner-container #header #input-filter-container,html body #outer-container #inner-container #header-tools #input-filter-container{grid-area:input-filter-container;display:grid;grid-template-columns:422px 1fr;grid-template-areas:"input-container tools"}html body #outer-container #inner-container #header #input-filter-container #input-container,html body #outer-container #inner-container #header-tools #input-filter-container #input-container{justify-self:start;margin-top:0;justify-self:start;align-self:center;width:420px;grid-area:input-container;box-shadow:1px 1px 2px #c8c8c8}html body #outer-container #inner-container #header #input-filter-container #input-container #search-input,html body #outer-container #inner-container #header-tools #input-filter-container #input-container #search-input{grid-area:search-input}html body #outer-container #inner-container #header #input-filter-container #tools,html body #outer-container #inner-container #header-tools #input-filter-container #tools{grid-area:tools;font-size:12px;color:#d3d3d3;border:none;width:60px;height:30px;background-color:#fff;text-transform:capitalize;margin-left:15px;align-self:center;justify-self:start;font-family:"Roboto",arial,sans-serif;font-size:15px}html body #outer-container #inner-container #header #input-filter-container #tools:hover,html body #outer-container #inner-container #header-tools #input-filter-container #tools:hover{background-color:#f9f9f9;border:1px solid #d3d3d3;box-shadow:1px 1px 2px #c8c8c8;border-radius:3px;cursor:pointer;color:#5f6368}html body #outer-container #inner-container #header #github,html body #outer-container #inner-container #header-tools #github{grid-area:github}html body #outer-container #inner-container #header #linkedin,html body #outer-container #inner-container #header-tools #linkedin{grid-area:linkedin}html body #outer-container #inner-container #header #resume,html body #outer-container #inner-container #header-tools #resume{grid-area:resume}html body #outer-container #inner-container #header #portfolio,html body #outer-container #inner-container #header-tools #portfolio{grid-area:portfolio}html body #outer-container #inner-container #header #portfolio #resume-container img,html body #outer-container #inner-container #header-tools #portfolio #resume-container img{height:30px;width:30px;-o-object-fit:cover;object-fit:cover;border-radius:50%}html body #outer-container #inner-container #header .filter-container,html body #outer-container #inner-container #header-tools .filter-container{display:flex;align-content:flex-start;justify-content:flex-start;grid-area:filter-container}html body #outer-container #inner-container #header .filter-container #exclude-container,html body #outer-container #inner-container #header-tools .filter-container #exclude-container{grid-area:exclude-container;width:300px;margin-top:0}html body #outer-container #inner-container #header .filter-container #exclude-container #exclude-input,html body #outer-container #inner-container #header-tools .filter-container #exclude-container #exclude-input{grid-area:exclude-input}html body #outer-container #inner-container #header .filter-container #meal-type,html body #outer-container #inner-container #header .filter-container #diets,html body #outer-container #inner-container #header-tools .filter-container #meal-type,html body #outer-container #inner-container #header-tools .filter-container #diets{grid-area:meal-type;border-radius:30px;border:1px solid rgba(0,0,0,.08);padding:0;margin-left:10px;height:32px;width:95px;text-transform:capitalize;text-align:center;-moz-text-align-last:center;text-align-last:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;color:#d3d3d3;cursor:pointer}html body #outer-container #inner-container #header .filter-container #meal-type:hover,html body #outer-container #inner-container #header .filter-container #diets:hover,html body #outer-container #inner-container #header-tools .filter-container #meal-type:hover,html body #outer-container #inner-container #header-tools .filter-container #diets:hover{box-shadow:1px 1px 2px #c8c8c8}html body #outer-container #inner-container #header .filter-container #filter,html body #outer-container #inner-container #header-tools .filter-container #filter{grid-area:filter;font-size:12px;width:80px;height:auto;max-height:33px;margin-left:10px}html body #outer-container #inner-container #header .filter-container #diets,html body #outer-container #inner-container #header-tools .filter-container #diets{grid-area:diets;margin-left:10px}html body #outer-container #inner-container #header-tools{display:none}html body #outer-container #inner-container #search-container{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:100px 70px 70px;grid-template-areas:". logo ." ". main-input-container ." ". search-btn-container ."}html body #outer-container #inner-container #search-container #logo{text-transform:capitalize;font-family:"Urbanist",sans-serif;font-size:80px;font-weight:bold;grid-area:logo;justify-self:center;align-self:start}html body #outer-container #inner-container #search-container #main-input-container{grid-area:main-input-container}html body #outer-container #inner-container #search-container #main-input-container #main-search-input{grid-area:main-search-input}html body #outer-container #inner-container #search-container #search-btn-container{grid-area:search-btn-container;display:flex;justify-self:center;align-self:center}html body #outer-container #inner-container #search-container #search-btn-container #scroople-search-btn{margin-right:5px;width:auto;height:auto;max-height:33px}html body #outer-container #inner-container #search-container #search-btn-container #feeling-lucky-btn{margin-left:5px;white-space:nowrap;overflow:hidden;text-overflow:clip;width:auto;height:auto;max-height:33px}html body #outer-container #inner-container #search-container #search-btn-container #feeling-lucky-btn ul{margin:0;padding:0;white-space:nowrap;overflow:hidden;width:130px;margin-top:-116px}html body #outer-container #inner-container #search-container #search-btn-container #feeling-lucky-btn ul li{padding:0 0 5px 0}html body #outer-container #inner-container #search-result-container{display:grid;grid-template-columns:200px 1fr 170px;grid-template-areas:". search-results ."}html body #outer-container #inner-container #search-result-container #search-results{grid-area:search-results;width:760px}html body #outer-container #inner-container #search-result-container #search-results .result{width:100%;display:grid;grid-template-rows:20px 40px 20px 20px;margin-top:30px;grid-template-areas:"url" "title" "summary" "result-links"}html body #outer-container #inner-container #search-result-container #search-results .result .url{grid-area:url;color:#202124;font-size:14px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}html body #outer-container #inner-container #search-result-container #search-results .result .title{grid-area:title;color:#1a0dab;font-size:20px;margin:0;padding-top:5px;align-self:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}html body #outer-container #inner-container #search-result-container #search-results .result .summary{grid-area:summary;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0;color:#4d5156;line-height:1.5}html body #outer-container #inner-container #search-result-container #search-results .result .result-links{grid-area:result-links;display:flex}html body #outer-container #inner-container #search-result-container #search-results .result .result-links p{margin:15px 0 0 0;color:#4d5156}html body #outer-container #inner-container #search-result-container #search-results .result .result-links p:first-child{margin-right:10px}html body #outer-container #inner-container footer{display:grid;position:fixed;bottom:0;left:0;right:0;grid-template-columns:160px 105px 110px 1fr 120px;grid-template-rows:50px;grid-template-areas:"how-scroople-works composting food-storage . ipcc-report";background-color:#f2f2f2}html body #outer-container #inner-container footer #how-scroople-works{grid-area:how-scroople-works}html body #outer-container #inner-container footer #composting{grid-area:composting}html body #outer-container #inner-container footer #food-storage{grid-area:food-storage}html body #outer-container #inner-container footer #ipcc-report{grid-area:ipcc-report}html body #outer-container #inner-container footer #ipcc-report i{color:#9acd32}html body #outer-container #inner-container .modal-background{position:fixed;width:100%;height:100vh;top:0;left:0;background-color:rgba(131,131,131,.081);display:flex;justify-content:center;align-items:center;visibility:hidden;opacity:0}html body #outer-container #inner-container .modal-background #modal{background-color:#fff;height:70%;width:50%;border-radius:7px;box-shadow:1px 1px 7px #c8c8c8;display:flex;justify-content:center;align-items:center;flex-direction:column;position:relative;overflow:auto}html body #outer-container #inner-container .modal-background #modal .fa-times{position:absolute;top:25px;right:25px;cursor:pointer}html body #outer-container #inner-container .modal-background #modal #content{display:flex;justify-content:center;align-items:center;flex-direction:column;height:90%;width:90%}html body #outer-container #inner-container .modal-background #modal #content ol{padding:0 50px 0 50px}html body #outer-container #inner-container .modal-background #modal #content ol li{list-style:unset}html body #outer-container #inner-container .modal-active{visibility:visible;opacity:1}html .hidden{display:none}html .visibility{visibility:hidden}html .filter-visibility{visibility:hidden}
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 100%;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 14px;
+}
+html head #favicon {
+  border-radius: 50%;
+}
+html body a {
+  text-decoration: none;
+  color: #222222;
+  cursor: pointer;
+}
+html body ul, html body li {
+  list-style: none;
+}
+html body #outer-container #inner-container .header-links, html body #outer-container #inner-container .footer-links {
+  justify-self: center;
+  align-self: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+html body #outer-container #inner-container .header-links:hover, html body #outer-container #inner-container .footer-links:hover {
+  text-decoration: underline;
+}
+html body #outer-container #inner-container #input-container, html body #outer-container #inner-container #exclude-container, html body #outer-container #inner-container #main-input-container {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 30px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+html body #outer-container #inner-container #input-container i, html body #outer-container #inner-container #exclude-container i, html body #outer-container #inner-container #main-input-container i {
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.08);
+}
+html body #outer-container #inner-container #input-container .fa-times, html body #outer-container #inner-container #exclude-container .fa-times, html body #outer-container #inner-container #main-input-container .fa-times {
+  margin-right: 10px;
+  cursor: pointer;
+}
+html body #outer-container #inner-container #input-container #search-input, html body #outer-container #inner-container #input-container #exclude-input, html body #outer-container #inner-container #input-container #main-search-input, html body #outer-container #inner-container #input-container #search-input-2, html body #outer-container #inner-container #exclude-container #search-input, html body #outer-container #inner-container #exclude-container #exclude-input, html body #outer-container #inner-container #exclude-container #main-search-input, html body #outer-container #inner-container #exclude-container #search-input-2, html body #outer-container #inner-container #main-input-container #search-input, html body #outer-container #inner-container #main-input-container #exclude-input, html body #outer-container #inner-container #main-input-container #main-search-input, html body #outer-container #inner-container #main-input-container #search-input-2 {
+  width: 100%;
+  align-self: center;
+  margin-left: 5px;
+  border: none;
+  border-radius: 30px;
+}
+html body #outer-container #inner-container #input-container #search-input::-moz-placeholder, html body #outer-container #inner-container #input-container #exclude-input::-moz-placeholder, html body #outer-container #inner-container #input-container #main-search-input::-moz-placeholder, html body #outer-container #inner-container #input-container #search-input-2::-moz-placeholder, html body #outer-container #inner-container #exclude-container #search-input::-moz-placeholder, html body #outer-container #inner-container #exclude-container #exclude-input::-moz-placeholder, html body #outer-container #inner-container #exclude-container #main-search-input::-moz-placeholder, html body #outer-container #inner-container #exclude-container #search-input-2::-moz-placeholder, html body #outer-container #inner-container #main-input-container #search-input::-moz-placeholder, html body #outer-container #inner-container #main-input-container #exclude-input::-moz-placeholder, html body #outer-container #inner-container #main-input-container #main-search-input::-moz-placeholder, html body #outer-container #inner-container #main-input-container #search-input-2::-moz-placeholder {
+  color: lightgray;
+  font-style: italic;
+}
+html body #outer-container #inner-container #input-container #search-input:-ms-input-placeholder, html body #outer-container #inner-container #input-container #exclude-input:-ms-input-placeholder, html body #outer-container #inner-container #input-container #main-search-input:-ms-input-placeholder, html body #outer-container #inner-container #input-container #search-input-2:-ms-input-placeholder, html body #outer-container #inner-container #exclude-container #search-input:-ms-input-placeholder, html body #outer-container #inner-container #exclude-container #exclude-input:-ms-input-placeholder, html body #outer-container #inner-container #exclude-container #main-search-input:-ms-input-placeholder, html body #outer-container #inner-container #exclude-container #search-input-2:-ms-input-placeholder, html body #outer-container #inner-container #main-input-container #search-input:-ms-input-placeholder, html body #outer-container #inner-container #main-input-container #exclude-input:-ms-input-placeholder, html body #outer-container #inner-container #main-input-container #main-search-input:-ms-input-placeholder, html body #outer-container #inner-container #main-input-container #search-input-2:-ms-input-placeholder {
+  color: lightgray;
+  font-style: italic;
+}
+html body #outer-container #inner-container #input-container #search-input::placeholder, html body #outer-container #inner-container #input-container #exclude-input::placeholder, html body #outer-container #inner-container #input-container #main-search-input::placeholder, html body #outer-container #inner-container #input-container #search-input-2::placeholder, html body #outer-container #inner-container #exclude-container #search-input::placeholder, html body #outer-container #inner-container #exclude-container #exclude-input::placeholder, html body #outer-container #inner-container #exclude-container #main-search-input::placeholder, html body #outer-container #inner-container #exclude-container #search-input-2::placeholder, html body #outer-container #inner-container #main-input-container #search-input::placeholder, html body #outer-container #inner-container #main-input-container #exclude-input::placeholder, html body #outer-container #inner-container #main-input-container #main-search-input::placeholder, html body #outer-container #inner-container #main-input-container #search-input-2::placeholder {
+  color: lightgray;
+  font-style: italic;
+}
+html body #outer-container #inner-container #input-container #search-input:focus, html body #outer-container #inner-container #input-container #exclude-input:focus, html body #outer-container #inner-container #input-container #main-search-input:focus, html body #outer-container #inner-container #input-container #search-input-2:focus, html body #outer-container #inner-container #exclude-container #search-input:focus, html body #outer-container #inner-container #exclude-container #exclude-input:focus, html body #outer-container #inner-container #exclude-container #main-search-input:focus, html body #outer-container #inner-container #exclude-container #search-input-2:focus, html body #outer-container #inner-container #main-input-container #search-input:focus, html body #outer-container #inner-container #main-input-container #exclude-input:focus, html body #outer-container #inner-container #main-input-container #main-search-input:focus, html body #outer-container #inner-container #main-input-container #search-input-2:focus {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+html body #outer-container #inner-container #input-container:hover, html body #outer-container #inner-container #exclude-container:hover, html body #outer-container #inner-container #main-input-container:hover {
+  box-shadow: 1px 1px 2px #c8c8c8;
+}
+html body #outer-container #inner-container .btns {
+  text-transform: capitalize;
+  border: none;
+  font-size: 15px;
+  color: #5F6368;
+  padding: 7px 15px 7px 15px;
+  border-radius: 3px;
+  border: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Roboto", arial, sans-serif;
+}
+html body #outer-container #inner-container .btns:hover {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  box-shadow: 1px 1px 2px #c8c8c8;
+}
+html body #outer-container #inner-container #header, html body #outer-container #inner-container #header-tools {
+  display: grid;
+  grid-template-columns: 200px 110px 1fr 65px 70px 35px 60px;
+  grid-template-rows: 50px 32px 10px;
+  grid-template-areas: ". logo input-filter-container github linkedin resume portfolio" ". . filter-container . . . .";
+}
+html body #outer-container #inner-container #header #logo, html body #outer-container #inner-container #header-tools #logo {
+  grid-area: logo;
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  justify-self: start;
+}
+html body #outer-container #inner-container #header #input-filter-container, html body #outer-container #inner-container #header-tools #input-filter-container {
+  grid-area: input-filter-container;
+  display: grid;
+  grid-template-columns: 422px 1fr;
+  grid-template-areas: "input-container tools";
+}
+html body #outer-container #inner-container #header #input-filter-container #input-container, html body #outer-container #inner-container #header-tools #input-filter-container #input-container {
+  justify-self: start;
+  margin-top: 0;
+  justify-self: start;
+  align-self: center;
+  width: 420px;
+  grid-area: input-container;
+  box-shadow: 1px 1px 2px #c8c8c8;
+}
+html body #outer-container #inner-container #header #input-filter-container #input-container #search-input, html body #outer-container #inner-container #header-tools #input-filter-container #input-container #search-input {
+  grid-area: search-input;
+}
+html body #outer-container #inner-container #header #input-filter-container #tools, html body #outer-container #inner-container #header-tools #input-filter-container #tools {
+  grid-area: tools;
+  font-size: 12px;
+  color: lightgray;
+  border: none;
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  text-transform: capitalize;
+  margin-left: 15px;
+  align-self: center;
+  justify-self: start;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 15px;
+}
+html body #outer-container #inner-container #header #input-filter-container #tools:hover, html body #outer-container #inner-container #header-tools #input-filter-container #tools:hover {
+  background-color: #f9f9f9;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 2px #c8c8c8;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #5F6368;
+}
+html body #outer-container #inner-container #header #github, html body #outer-container #inner-container #header-tools #github {
+  grid-area: github;
+}
+html body #outer-container #inner-container #header #linkedin, html body #outer-container #inner-container #header-tools #linkedin {
+  grid-area: linkedin;
+}
+html body #outer-container #inner-container #header #resume, html body #outer-container #inner-container #header-tools #resume {
+  grid-area: resume;
+}
+html body #outer-container #inner-container #header #portfolio, html body #outer-container #inner-container #header-tools #portfolio {
+  grid-area: portfolio;
+}
+html body #outer-container #inner-container #header #portfolio #resume-container img, html body #outer-container #inner-container #header-tools #portfolio #resume-container img {
+  height: 30px;
+  width: 30px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+html body #outer-container #inner-container #header .filter-container, html body #outer-container #inner-container #header-tools .filter-container {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  grid-area: filter-container;
+}
+html body #outer-container #inner-container #header .filter-container #exclude-container, html body #outer-container #inner-container #header-tools .filter-container #exclude-container {
+  grid-area: exclude-container;
+  width: 300px;
+  margin-top: 0;
+}
+html body #outer-container #inner-container #header .filter-container #exclude-container #exclude-input, html body #outer-container #inner-container #header-tools .filter-container #exclude-container #exclude-input {
+  grid-area: exclude-input;
+}
+html body #outer-container #inner-container #header .filter-container #meal-type, html body #outer-container #inner-container #header .filter-container #diets, html body #outer-container #inner-container #header-tools .filter-container #meal-type, html body #outer-container #inner-container #header-tools .filter-container #diets {
+  grid-area: meal-type;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0;
+  margin-left: 10px;
+  height: 32px;
+  width: 95px;
+  text-transform: capitalize;
+  text-align: center;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: lightgray;
+  cursor: pointer;
+}
+html body #outer-container #inner-container #header .filter-container #meal-type:hover, html body #outer-container #inner-container #header .filter-container #diets:hover, html body #outer-container #inner-container #header-tools .filter-container #meal-type:hover, html body #outer-container #inner-container #header-tools .filter-container #diets:hover {
+  box-shadow: 1px 1px 2px #c8c8c8;
+}
+html body #outer-container #inner-container #header .filter-container #filter, html body #outer-container #inner-container #header-tools .filter-container #filter {
+  grid-area: filter;
+  font-size: 12px;
+  width: 80px;
+  height: auto;
+  max-height: 33px;
+  margin-left: 10px;
+}
+html body #outer-container #inner-container #header .filter-container #diets, html body #outer-container #inner-container #header-tools .filter-container #diets {
+  grid-area: diets;
+  margin-left: 10px;
+}
+html body #outer-container #inner-container #header-tools {
+  display: none;
+}
+html body #outer-container #inner-container #search-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 70px 70px;
+  grid-template-areas: ". logo ." ". main-input-container ." ". search-btn-container .";
+}
+html body #outer-container #inner-container #search-container #logo {
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  grid-area: logo;
+  justify-self: center;
+  align-self: start;
+}
+html body #outer-container #inner-container #search-container #main-input-container {
+  grid-area: main-input-container;
+}
+html body #outer-container #inner-container #search-container #main-input-container #main-search-input {
+  grid-area: main-search-input;
+}
+html body #outer-container #inner-container #search-container #search-btn-container {
+  grid-area: search-btn-container;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+html body #outer-container #inner-container #search-container #search-btn-container #scroople-search-btn {
+  margin-right: 5px;
+  width: auto;
+  height: auto;
+  max-height: 33px;
+}
+html body #outer-container #inner-container #search-container #search-btn-container #feeling-lucky-btn {
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  width: auto;
+  height: auto;
+  max-height: 33px;
+}
+html body #outer-container #inner-container #search-container #search-btn-container #feeling-lucky-btn ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 130px;
+  margin-top: -116px;
+}
+html body #outer-container #inner-container #search-container #search-btn-container #feeling-lucky-btn ul li {
+  padding: 0 0 5px 0;
+}
+html body #outer-container #inner-container #search-result-container {
+  display: grid;
+  grid-template-columns: 200px 1fr 170px;
+  grid-template-areas: ". search-results .";
+}
+html body #outer-container #inner-container #search-result-container #search-results {
+  grid-area: search-results;
+  width: 760px;
+}
+html body #outer-container #inner-container #search-result-container #search-results .result {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 20px 40px 20px 20px;
+  margin-top: 30px;
+  grid-template-areas: "url" "title" "summary" "result-links";
+}
+html body #outer-container #inner-container #search-result-container #search-results .result .url {
+  grid-area: url;
+  color: #202124;
+  font-size: 14px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+html body #outer-container #inner-container #search-result-container #search-results .result .title {
+  grid-area: title;
+  color: #1a0dab;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 5px;
+  align-self: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+html body #outer-container #inner-container #search-result-container #search-results .result .summary {
+  grid-area: summary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  color: #4d5156;
+  line-height: 1.5;
+}
+html body #outer-container #inner-container #search-result-container #search-results .result .result-links {
+  grid-area: result-links;
+  display: flex;
+}
+html body #outer-container #inner-container #search-result-container #search-results .result .result-links p {
+  margin: 15px 0 0 0;
+  color: #4d5156;
+}
+html body #outer-container #inner-container #search-result-container #search-results .result .result-links p:first-child {
+  margin-right: 10px;
+}
+html body #outer-container #inner-container footer {
+  display: grid;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  grid-template-columns: 160px 105px 110px 1fr 120px;
+  grid-template-rows: 50px;
+  grid-template-areas: "how-scroople-works composting food-storage . ipcc-report";
+  background-color: #f2f2f2;
+}
+html body #outer-container #inner-container footer #how-scroople-works {
+  grid-area: how-scroople-works;
+}
+html body #outer-container #inner-container footer #composting {
+  grid-area: composting;
+}
+html body #outer-container #inner-container footer #food-storage {
+  grid-area: food-storage;
+}
+html body #outer-container #inner-container footer #ipcc-report {
+  grid-area: ipcc-report;
+}
+html body #outer-container #inner-container footer #ipcc-report i {
+  color: yellowgreen;
+}
+html body #outer-container #inner-container .modal-background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(131, 131, 131, 0.081);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+html body #outer-container #inner-container .modal-background #modal {
+  background-color: white;
+  height: 70%;
+  width: 50%;
+  border-radius: 7px;
+  box-shadow: 1px 1px 7px #c8c8c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+}
+html body #outer-container #inner-container .modal-background #modal .fa-times {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+html body #outer-container #inner-container .modal-background #modal #content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+}
+html body #outer-container #inner-container .modal-background #modal #content ol {
+  padding: 0 50px 0 50px;
+}
+html body #outer-container #inner-container .modal-background #modal #content ol li {
+  list-style: unset;
+}
+html body #outer-container #inner-container .modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+html .hidden {
+  display: none;
+}
+html .visibility {
+  visibility: hidden;
+}
+html .filter-visibility {
+  visibility: hidden;
+}
 
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,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Q0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBMUVWO0FBNEVVO0VBQ0U7QUExRVo7QUE2RVU7RUFDRTtBQTNFWjtBQThFVTtFQUNFO0FBNUVaO0FBK0VVO0VBQ0U7QUE3RVo7QUErRVk7RUFDRTtBQTdFZDtBQWtGUTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQWhGVjtBQWtGVTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUFoRlo7QUFrRlk7RUFDRTtFQUNBO0VBQ0E7RUFDQTtBQWhGZDtBQW1GWTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQWpGWjtBQW1GYztFQUNFO0FBakZoQjtBQW1GZ0I7RUFDRTtBQWpGbEI7QUF3RlE7RUFDRTtFQUNBO0FBdEZWO0FBNEZFO0VBQ0U7QUExRko7QUE2RkU7RUFDRTtBQTNGSjtBQThGRTtFQUNFO0FBNUZKLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zY3Jvb3BsZS8uL3NyYy9zdHlsZXMvaW5kZXguc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJodG1sIHtcbiAgcGFkZGluZzogMDtcbiAgbWFyZ2luOiAwO1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBoZWlnaHQ6IDEwMCU7XG4gIG1pbi1oZWlnaHQ6IDEwMCU7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvJywgYXJpYWwsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc2l6ZTogMTRweDtcblxuICBoZWFkIHtcblxuICAgICNmYXZpY29uIHtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICB9XG4gIH1cblxuICBib2R5IHtcblxuICAgIGEge1xuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgY29sb3I6ICMyMjIyMjI7XG4gICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgfVxuXG4gICAgdWwsIGxpIHtcbiAgICAgIGxpc3Qtc3R5bGU6IG5vbmU7XG4gICAgfVxuXG4gICAgI291dGVyLWNvbnRhaW5lciB7XG5cbiAgICAgICNpbm5lci1jb250YWluZXIge1xuICAgICAgICBcbiAgICAgICAgLmhlYWRlci1saW5rcywgLmZvb3Rlci1saW5rcyB7XG4gICAgICAgICAganVzdGlmeS1zZWxmOiBjZW50ZXI7XG4gICAgICAgICAgYWxpZ24tc2VsZjogY2VudGVyO1xuICAgICAgICAgIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xuICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcblxuICAgICAgICAgICY6aG92ZXIge1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICAgICAgICAjaW5wdXQtY29udGFpbmVyLCAjZXhjbHVkZS1jb250YWluZXIsICNtYWluLWlucHV0LWNvbnRhaW5lciB7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDMwcHg7XG4gICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuMDgwKTtcbiAgICAgICAgICAgIGhlaWdodDogMzBweDtcbiAgICAgICAgICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblxuICAgICAgICAgICAgaSB7XG4gICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgICAgICAgICAgICBjb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA4MCk7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5mYS10aW1lcyB7XG4gICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgICAgfVxuICAgICAgICAgICAgXG4gICAgICAgICAgICAjc2VhcmNoLWlucHV0LCAjZXhjbHVkZS1pbnB1dCwgI21haW4tc2VhcmNoLWlucHV0LCAjc2VhcmNoLWlucHV0LTIge1xuICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgICAgYWxpZ24tc2VsZjogY2VudGVyO1xuICAgICAgICAgICAgICBtYXJnaW4tbGVmdDogNXB4O1xuICAgICAgICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDMwcHg7XG5cbiAgICAgICAgICAgICAgJjo6LW1vei1wbGFjZWhvbGRlciB7XG4gICAgICAgICAgICAgICAgY29sb3I6IGxpZ2h0Z3JheTtcbiAgICAgICAgICAgICAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAmOi1tcy1pbnB1dC1wbGFjZWhvbGRlciB7XG4gICAgICAgICAgICAgICAgY29sb3I6IGxpZ2h0Z3JheTtcbiAgICAgICAgICAgICAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAmOjpwbGFjZWhvbGRlciB7XG4gICAgICAgICAgICAgICAgY29sb3I6IGxpZ2h0Z3JheTtcbiAgICAgICAgICAgICAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICY6Zm9jdXMge1xuICAgICAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDMwcHg7XG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgICAgIGJveC1zaGFkb3c6IDFweCAxcHggMnB4IHJnYigyMDAsIDIwMCwgMjAwKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9XG5cbiAgICAgICAgICAuYnRucyB7XG4gICAgICAgICAgICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcbiAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICAgICAgICAgIGNvbG9yOiAjNUY2MzY4O1xuICAgICAgICAgICAgcGFkZGluZzogN3B4IDE1cHggN3B4IDE1cHg7XG4gICAgICAgICAgICBib3JkZXItcmFkaXVzOiAzcHg7XG4gICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTtcbiAgICAgICAgICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBhcmlhbCwgc2Fucy1zZXJpZjtcblxuICAgICAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4yMzApO1xuICAgICAgICAgICAgICBib3gtc2hhZG93OiAxcHggMXB4IDJweCByZ2IoMjAwLCAyMDAsIDIwMCk7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgfVxuXG4gICAgICAgICNoZWFkZXIsICNoZWFkZXItdG9vbHMge1xuICAgICAgICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAyMDBweCAxMTBweCAxZnIgNjVweCA3MHB4IDM1cHggNjBweDtcbiAgICAgICAgICBncmlkLXRlbXBsYXRlLXJvd3M6IDUwcHggMzJweCAxMHB4O1xuICAgICAgICAgIGdyaWQtdGVtcGxhdGUtYXJlYXM6IFxuICAgICAgICAgIFwiLiBsb2dvIGlucHV0LWZpbHRlci1jb250YWluZXIgZ2l0aHViIGxpbmtlZGluIHJlc3VtZSBwb3J0Zm9saW9cIlxuICAgICAgICAgIFwiLiAuIGZpbHRlci1jb250YWluZXIgLiAuIC4gLlwiO1xuXG4gICAgICAgICAgI2xvZ28ge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBsb2dvO1xuICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdVcmJhbmlzdCcsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICAgICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICAgIGp1c3RpZnktc2VsZjogc3RhcnQ7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgI2lucHV0LWZpbHRlci1jb250YWluZXJ7XG4gICAgICAgICAgICBncmlkLWFyZWE6IGlucHV0LWZpbHRlci1jb250YWluZXI7XG4gICAgICAgICAgICBkaXNwbGF5OiBncmlkO1xuICAgICAgICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiA0MjJweCAxZnI7XG4gICAgICAgICAgICBncmlkLXRlbXBsYXRlLWFyZWFzOiBcImlucHV0LWNvbnRhaW5lciB0b29sc1wiO1xuICAgICAgICAgICAgXG4gICAgICAgICAgICAjaW5wdXQtY29udGFpbmVyIHtcbiAgICAgICAgICAgICAganVzdGlmeS1zZWxmOiBzdGFydDtcbiAgICAgICAgICAgICAgbWFyZ2luLXRvcDogMDtcbiAgICAgICAgICAgICAganVzdGlmeS1zZWxmOiBzdGFydDtcbiAgICAgICAgICAgICAgYWxpZ24tc2VsZjogY2VudGVyO1xuICAgICAgICAgICAgICB3aWR0aDogNDIwcHg7XG4gICAgICAgICAgICAgIGdyaWQtYXJlYTogaW5wdXQtY29udGFpbmVyO1xuICAgICAgICAgICAgICBib3gtc2hhZG93OiAxcHggMXB4IDJweCByZ2IoMjAwLCAyMDAsIDIwMCk7XG4gIFxuICAgICAgICAgICAgICAjc2VhcmNoLWlucHV0IHtcbiAgICAgICAgICAgICAgICBncmlkLWFyZWE6IHNlYXJjaC1pbnB1dDtcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAjdG9vbHMge1xuICAgICAgICAgICAgICBncmlkLWFyZWE6IHRvb2xzO1xuICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgIGNvbG9yOiBsaWdodGdyYXk7XG4gICAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgICAgICAgd2lkdGg6IDYwcHg7XG4gICAgICAgICAgICAgIGhlaWdodDogMzBweDtcbiAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgICAgICAgIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xuICAgICAgICAgICAgICBtYXJnaW4tbGVmdDogMTVweDtcbiAgICAgICAgICAgICAgYWxpZ24tc2VsZjogY2VudGVyO1xuICAgICAgICAgICAgICBqdXN0aWZ5LXNlbGY6IHN0YXJ0O1xuICAgICAgICAgICAgICBmb250LWZhbWlseTogJ1JvYm90bycsIGFyaWFsLCBzYW5zLXNlcmlmO1xuICAgICAgICAgICAgICBmb250LXNpemU6IDE1cHg7XG4gICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQ5LCAyNDksIDI0OSk7XG4gICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmF5O1xuICAgICAgICAgICAgICAgIGJveC1zaGFkb3c6IDFweCAxcHggMnB4IHJnYigyMDAsIDIwMCwgMjAwKTtcbiAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiAzcHg7XG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgICAgICAgIGNvbG9yOiAjNUY2MzY4O1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgI2dpdGh1YiB7XG4gICAgICAgICAgICBncmlkLWFyZWE6IGdpdGh1YjtcbiAgICAgICAgICB9XG5cbiAgICAgICAgICAjbGlua2VkaW4ge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBsaW5rZWRpbjtcbiAgICAgICAgICB9XG5cbiAgICAgICAgICAjcmVzdW1lIHtcbiAgICAgICAgICAgIGdyaWQtYXJlYTogcmVzdW1lO1xuICAgICAgICAgIH1cblxuICAgICAgICAgICNwb3J0Zm9saW8ge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBwb3J0Zm9saW87XG5cbiAgICAgICAgICAgICNyZXN1bWUtY29udGFpbmVyIHtcblxuICAgICAgICAgICAgICBpbWcge1xuICAgICAgICAgICAgICAgIGhlaWdodDogMzBweDtcbiAgICAgICAgICAgICAgICB3aWR0aDogMzBweDtcbiAgICAgICAgICAgICAgICAtby1vYmplY3QtZml0OiBjb3ZlcjtcbiAgICAgICAgICAgICAgICAgICBvYmplY3QtZml0OiBjb3ZlcjtcbiAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICAgICAgICAgIH0gICAgICAgICAgICAgIFxuICAgICAgICAgICAgfVxuICAgICAgICAgIH1cblxuICAgICAgICAgIC5maWx0ZXItY29udGFpbmVyIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBhbGlnbi1jb250ZW50OiBmbGV4LXN0YXJ0O1xuICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBmaWx0ZXItY29udGFpbmVyO1xuXG4gICAgICAgICAgICAjZXhjbHVkZS1jb250YWluZXIge1xuICAgICAgICAgICAgICBncmlkLWFyZWE6IGV4Y2x1ZGUtY29udGFpbmVyO1xuICAgICAgICAgICAgICB3aWR0aDogMzAwcHg7XG4gICAgICAgICAgICAgIG1hcmdpbi10b3A6IDA7XG4gIFxuICAgICAgICAgICAgICAjZXhjbHVkZS1pbnB1dCB7XG4gICAgICAgICAgICAgICAgZ3JpZC1hcmVhOiBleGNsdWRlLWlucHV0O1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICNtZWFsLXR5cGUsICNkaWV0cyB7XG4gICAgICAgICAgICAgIGdyaWQtYXJlYTogbWVhbC10eXBlO1xuICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiAzMHB4O1xuICAgICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuMDgwKTtcbiAgICAgICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gICAgICAgICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgICAgICAgd2lkdGg6IDk1cHg7XG4gICAgICAgICAgICAgIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xuICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgICAgIC1tb3otdGV4dC1hbGlnbi1sYXN0OiBjZW50ZXI7XG4gICAgICAgICAgICAgICAgICAgdGV4dC1hbGlnbi1sYXN0OiBjZW50ZXI7XG4gICAgICAgICAgICAgIC13ZWJraXQtYXBwZWFyYW5jZTogbm9uZTtcbiAgICAgICAgICAgICAgICAgLW1vei1hcHBlYXJhbmNlOiBub25lO1xuICAgICAgICAgICAgICAgICAgICAgIGFwcGVhcmFuY2U6IG5vbmU7XG4gICAgICAgICAgICAgIGNvbG9yOiBsaWdodGdyYXk7XG4gICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcblxuICAgICAgICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAxcHggMXB4IDJweCByZ2IoMjAwLCAyMDAsIDIwMCk7XG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICNmaWx0ZXIge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBmaWx0ZXI7XG4gICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICB3aWR0aDogODBweDtcbiAgICAgICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgICAgICAgIG1heC1oZWlnaHQ6IDMzcHg7XG4gICAgICAgICAgICBtYXJnaW4tbGVmdDogMTBweDtcbiAgICAgICAgICB9XG5cbiAgICAgICAgICAgICNkaWV0cyB7XG4gICAgICAgICAgICAgIGdyaWQtYXJlYTogZGlldHM7XG4gICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgICAgICAgICAgfVxuICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgICNoZWFkZXItdG9vbHMge1xuICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgICAgIH1cblxuICAgICAgICAjc2VhcmNoLWNvbnRhaW5lciB7XG4gICAgICAgICAgZGlzcGxheTogZ3JpZDtcbiAgICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgICAgICAgIGdyaWQtdGVtcGxhdGUtcm93czogMTAwcHggNzBweCA3MHB4O1xuICAgICAgICAgIGdyaWQtdGVtcGxhdGUtYXJlYXM6IFxuICAgICAgICAgIFwiLiBsb2dvIC5cIlxuICAgICAgICAgIFwiLiBtYWluLWlucHV0LWNvbnRhaW5lciAuXCJcbiAgICAgICAgICBcIi4gc2VhcmNoLWJ0bi1jb250YWluZXIgLlwiO1xuXG4gICAgICAgICAgI2xvZ28ge1xuICAgICAgICAgICAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gICAgICAgICAgICBmb250LWZhbWlseTogJ1VyYmFuaXN0Jywgc2Fucy1zZXJpZjtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogODBweDtcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBsb2dvO1xuICAgICAgICAgICAganVzdGlmeS1zZWxmOiBjZW50ZXI7XG4gICAgICAgICAgICBhbGlnbi1zZWxmOiBzdGFydDtcbiAgICAgICAgICB9XG5cbiAgICAgICAgICAjbWFpbi1pbnB1dC1jb250YWluZXIge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBtYWluLWlucHV0LWNvbnRhaW5lcjtcblxuICAgICAgICAgICAgI21haW4tc2VhcmNoLWlucHV0IHtcbiAgICAgICAgICAgICAgZ3JpZC1hcmVhOiBtYWluLXNlYXJjaC1pbnB1dDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9XG5cbiAgICAgICAgICAjc2VhcmNoLWJ0bi1jb250YWluZXIge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBzZWFyY2gtYnRuLWNvbnRhaW5lcjtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBqdXN0aWZ5LXNlbGY6IGNlbnRlcjtcbiAgICAgICAgICAgIGFsaWduLXNlbGY6IGNlbnRlcjtcblxuICAgICAgICAgICAgI3Njcm9vcGxlLXNlYXJjaC1idG4ge1xuICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDVweDtcbiAgICAgICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgICAgICAgICAgbWF4LWhlaWdodDogMzNweDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIFxuICAgICAgICAgICAgI2ZlZWxpbmctbHVja3ktYnRuIHtcbiAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDVweDtcbiAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICAgICAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICAgICAgICAgICAgdGV4dC1vdmVyZmxvdzogY2xpcDtcbiAgICAgICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgICAgICAgICAgbWF4LWhlaWdodDogMzNweDtcblxuICAgICAgICAgICAgICB1bCB7XG4gICAgICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICAgICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICAgICAgICAgIHdpZHRoOiAxMzBweDtcbiAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiAtMTE2cHg7XG4gICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgbGkge1xuICAgICAgICAgICAgICAgICAgcGFkZGluZzogMCAwIDVweCAwO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgICNzZWFyY2gtcmVzdWx0LWNvbnRhaW5lciB7XG4gICAgICAgICAgZGlzcGxheTogZ3JpZDtcbiAgICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDIwMHB4IDFmciAxNzBweDtcbiAgICAgICAgICBncmlkLXRlbXBsYXRlLWFyZWFzOiBcIi4gc2VhcmNoLXJlc3VsdHMgLlwiO1xuICAgICAgICAgICAgXG4gICAgICAgICAgI3NlYXJjaC1yZXN1bHRzIHtcbiAgICAgICAgICAgIGdyaWQtYXJlYTogc2VhcmNoLXJlc3VsdHM7XG4gICAgICAgICAgICB3aWR0aDogNzYwcHg7XG5cbiAgICAgICAgICAgIC5yZXN1bHQge1xuICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgICAgZGlzcGxheTogZ3JpZDtcbiAgICAgICAgICAgICAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiAyMHB4IDQwcHggMjBweCAyMHB4O1xuICAgICAgICAgICAgICBtYXJnaW4tdG9wOiAzMHB4O1xuICAgICAgICAgICAgICBncmlkLXRlbXBsYXRlLWFyZWFzOiBcbiAgICAgICAgICAgICAgXCJ1cmxcIlxuICAgICAgICAgICAgICBcInRpdGxlXCJcbiAgICAgICAgICAgICAgXCJzdW1tYXJ5XCJcbiAgICAgICAgICAgICAgXCJyZXN1bHQtbGlua3NcIjtcbiAgXG4gICAgICAgICAgICAgIC51cmwge1xuICAgICAgICAgICAgICAgIGdyaWQtYXJlYTogdXJsO1xuICAgICAgICAgICAgICAgIGNvbG9yOiAjMjAyMTI0O1xuICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICAgICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICAgICAgICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgICAgICAgICAgICB9XG4gIFxuICAgICAgICAgICAgICAudGl0bGUge1xuICAgICAgICAgICAgICAgIGdyaWQtYXJlYTogdGl0bGU7XG4gICAgICAgICAgICAgICAgY29sb3I6ICMxYTBkYWI7XG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4O1xuICAgICAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgICAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgICAgICAgICAgICAgIGFsaWduLXNlbGY6IGNlbnRlcjtcbiAgICAgICAgICAgICAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgICAgICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgICAgICAgICAgICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgICAgICAgICAgIH1cbiAgXG4gICAgICAgICAgICAgIC5zdW1tYXJ5IHtcbiAgICAgICAgICAgICAgICBncmlkLWFyZWE6IHN1bW1hcnk7XG4gICAgICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICAgICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICAgICAgICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgICAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgICAgICBjb2xvcjogIzRkNTE1NjtcbiAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDogMS41O1xuICAgICAgICAgICAgICB9XG4gIFxuICAgICAgICAgICAgICAucmVzdWx0LWxpbmtzIHtcbiAgICAgICAgICAgICAgICBncmlkLWFyZWE6IHJlc3VsdC1saW5rcztcbiAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgIHAge1xuICAgICAgICAgICAgICAgICAgbWFyZ2luOiAxNXB4IDAgMCAwO1xuICAgICAgICAgICAgICAgICAgY29sb3I6ICM0ZDUxNTY7XG4gIFxuICAgICAgICAgICAgICAgICAgJjpmaXJzdC1jaGlsZCB7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9XG4gICAgICAgIH1cblxuICAgICAgICBmb290ZXIge1xuICAgICAgICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgICAgICAgcG9zaXRpb246IGZpeGVkO1xuICAgICAgICAgIGJvdHRvbTogMDtcbiAgICAgICAgICBsZWZ0OiAwO1xuICAgICAgICAgIHJpZ2h0OiAwO1xuICAgICAgICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTYwcHggMTA1cHggMTEwcHggMWZyIDEyMHB4O1xuICAgICAgICAgIGdyaWQtdGVtcGxhdGUtcm93czogNTBweDtcbiAgICAgICAgICBncmlkLXRlbXBsYXRlLWFyZWFzOiBcImhvdy1zY3Jvb3BsZS13b3JrcyBjb21wb3N0aW5nIGZvb2Qtc3RvcmFnZSAuIGlwY2MtcmVwb3J0XCI7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2YyZjJmMjtcblxuICAgICAgICAgICNob3ctc2Nyb29wbGUtd29ya3Mge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBob3ctc2Nyb29wbGUtd29ya3M7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgI2NvbXBvc3Rpbmcge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBjb21wb3N0aW5nO1xuICAgICAgICAgIH1cblxuICAgICAgICAgICNmb29kLXN0b3JhZ2Uge1xuICAgICAgICAgICAgZ3JpZC1hcmVhOiBmb29kLXN0b3JhZ2U7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgI2lwY2MtcmVwb3J0IHtcbiAgICAgICAgICAgIGdyaWQtYXJlYTogaXBjYy1yZXBvcnQ7XG5cbiAgICAgICAgICAgIGkge1xuICAgICAgICAgICAgICBjb2xvcjogeWVsbG93Z3JlZW47XG4gICAgICAgICAgICB9XG4gICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICAgICAgLm1vZGFsLWJhY2tncm91bmQge1xuICAgICAgICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBoZWlnaHQ6IDEwMHZoO1xuICAgICAgICAgIHRvcDogMDtcbiAgICAgICAgICBsZWZ0OiAwO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTMxLCAxMzEsIDEzMSwgMC4wODEpO1xuICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG5cbiAgICAgICAgICAjbW9kYWwge1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgICAgICBoZWlnaHQ6IDcwJTtcbiAgICAgICAgICAgIHdpZHRoOiA1MCU7XG4gICAgICAgICAgICBib3JkZXItcmFkaXVzOiA3cHg7XG4gICAgICAgICAgICBib3gtc2hhZG93OiAxcHggMXB4IDdweCByZ2IoMjAwLCAyMDAsIDIwMCk7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgICAgICAgIG92ZXJmbG93OiBhdXRvO1xuXG4gICAgICAgICAgICAuZmEtdGltZXMge1xuICAgICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgICAgICAgIHRvcDogMjVweDtcbiAgICAgICAgICAgICAgcmlnaHQ6IDI1cHg7XG4gICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgI2NvbnRlbnQge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgICBoZWlnaHQ6IDkwJTtcbiAgICAgICAgICAgIHdpZHRoOiA5MCU7XG5cbiAgICAgICAgICAgICAgb2wge1xuICAgICAgICAgICAgICAgIHBhZGRpbmc6IDAgNTBweCAwIDUwcHg7ICAgICAgICAgICAgICBcbiAgXG4gICAgICAgICAgICAgICAgbGkge1xuICAgICAgICAgICAgICAgICAgbGlzdC1zdHlsZTogdW5zZXQ7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9XG4gICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICAgICAgLm1vZGFsLWFjdGl2ZSB7XG4gICAgICAgICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG5cbiAgLmhpZGRlbiB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxuXG4gIC52aXNpYmlsaXR5IHtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gIH1cblxuICAuZmlsdGVyLXZpc2liaWxpdHkge1xuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgfVxufVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9*/

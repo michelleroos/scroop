@@ -1,5 +1,5 @@
 import "./styles/index.scss";
-// import Square from "./scripts/square";
+import { modalClick, closeModal, clickOutside } from "./scripts/modal";
 
 const app_key = require('../config/keys').app_key;
 const axios = require('axios').default;
